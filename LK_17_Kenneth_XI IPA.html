@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title> Perhitungan Volume Balok </title>
+</head>
+<body>
+    <b> Panjang </b> <input type="number" id="angka1"><br>
+    <b> Lebar </b> <input type="number" id="angka2"><br>
+    <b> Tinggi </b> <input type="number" id="angka3"><br>
+    <!-- pengambilan data  -->
+    <button type="button" onclick="Vbalok()"> <b> Hitung ! </b> </button>
+    <!-- penjalan function menghitung  -->
+    <h2> Hasil </h2>
+    <p id="hasilvolume"> </p>
+    <!-- pemunculan hasil  -->
+    <script>
+        function Vbalok() {
+            angka1 = document.getElementById ("angka1").value;
+            angka2 = document.getElementById ("angka2").value;
+            angka3 = document.getElementById ("angka3").value;
+            // pengambilan data 
+            let volume = angka1 * angka2 * angka3;
+            // penghitungan buat volume
+            document.getElementById ("hasilvolume").innerHTML =volume;
+        }
+    </script>
+</body>
+</html>
